@@ -1,3 +1,5 @@
+import org.omg.CORBA.portable.InputStream;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -22,6 +24,7 @@ public class FileTaskNew {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         try {
             Files.write(file1.toPath(), byteArray, StandardOpenOption.TRUNCATE_EXISTING);
         } catch (IOException e) {
